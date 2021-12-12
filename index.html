@@ -1,0 +1,30 @@
+<!--
+    Diego Hiriart León
+    2021-Diciembre-12
+    Ingeniería de Software
+    ISWZ2104-01 Programación V
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AR en web - Diego Hiriart</title>
+        <meta name="description" content="AR en web - Diego Hiriart" />
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style="margin: 0px; overflow: hidden;">
+        <a-scene embedded artoolkit="sourceType: webcam;">
+            <a-assets>
+                <a-asset-item id="Espada-Hiriart" src="Models/rapier_sword/scene.gltf"></a-asset-item><!--Modelo tipo .gltf que se importa para usarlo con el marker-->
+            </a-assets>
+            <a-marker preset="custom" type="pattern" url="Patterns/Pattern-DiegoHiriart.patt"><!--Marker custom que se creó con ADobe XD (imagen y patrón incluidos en el proyecto)-->
+                <a-entity gltf-model="#Espada-Hiriart" scale="0.2 0.2 0.2" 
+                    rotation="45 45 0"></a-entity><!--Referencia al asset que se creó con el modelo .gltf-->
+                <a-entity id="ambient_light" light="type: ambient; intensity: 10;" position="0 1 0"></a-entity>
+            </a-marker>
+            <a-entity camera>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>

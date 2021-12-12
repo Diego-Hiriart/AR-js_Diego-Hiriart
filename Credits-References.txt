@@ -1,0 +1,11 @@
+Diego Hiriart León
+2021-Diciembre-12
+Ingeniería de Software
+ISWZ2104-01 Programación V
+
+1) Créditos de Modelos:
+	-Rapier Sword: https://sketchfab.com/3d-models/rapier-sword-98a14cb81f974fb89775b5cfe269bd28
+
+2) Referencias:
+	-Incluir modelo .gltf en AR.js: Carpignoli, N. (2018). AR.js — The Simplest Way to get Cross-Browser Augmented Reality on the Web. Recuperado de: https://medium.com/chialab-open-source/ar-js-the-simpliest-way-to-get-cross-browser-ar-on-the-web-8f670dd45462
+	-Luz ambiental: A-Frame. (s.f.) light. Recuperado de: https://aframe.io/docs/0.9.0/components/light.html
